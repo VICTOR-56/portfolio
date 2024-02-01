@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/973cb67fd6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="heading">
+        <div class="container">
+            <nav>
+               <h3 class="logo" ><span class="v" >V</span>ignesh</h3>
+               <ul id="sidemenu">
+                <li><a href="#heading"><span class="fl">H</span>OME</a></li>
+                <li><a href="#about"><span class="fl">A</span>BOUT</a></li>
+                <li><a href="#portfolio"><span class="fl">P</span>ORTFOLIO</a></li>
+                <li><a href="#contact"><span class="fl">C</span>ONTACT</a></li>
+                <i class="fa-solid fa-xmark"  onclick="closemenu()"></i>
+               </ul> 
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headtext">
+                <p>Web Developer</p>
+                <h1>Hi, Iam<span> VIGNESH S </span><br>Fullstack Developer</h1>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="user.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="abme">ABOUT ME</h1>
+                <p>Hi, Iam Vignesh, an aspiring web developer having experiences in web developing. I beleive iam a very ambitious and skillfull person who loves to make the webpages runs well.
+                 I love to work on new projects with interest and happy as working on web is my passion</p>
+                     <div class="see">
+                        <p class="links activate"onclick="opentab('skills')">SKILLS</p>
+                        <p class="links"onclick="opentab('experience')" >EXPERIENCE</p>
+                        <p class="links"onclick="opentab('education')">EDUCATION</p>
+                     </div>
+                     <div class="see-contents active" id="skills">
+                        <ul>
+                            <li><span>FRONTEND DEVELOPING</span><br>Designing Web/app interfaces</li>
+                            <li><span>Web Development</span><br>Creating and solving problems</li>
+                            <li><span>web developing Languages</span><br>Html,CSS,JavaScript</li>
+                            <li><span>Programming Languages</span><br>Python</li>
+                        </ul>
+                     </div>
+                     <div class="see-contents" id="experience">
+                        <ul>
+                            <li><span>CAD Assistant July 2022-October 2023</span><br>At ASHWATH INC Tirupur as junior CAD designer</li>
+                            <li><span>Web Developer Oct 2023- Present</span><br>Web Developer</li>
+                        </ul>
+                     </div>
+                     <div class="see-contents" id="education">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Web Development with Python</li>
+                            <li><span>B Com PA 2019-2022</span><br>Sasuire College of Arts and Science Vijayamangalam Tirupur</li>
+                            <li><span>HSC 2019 Marks Percentage-67%</span><br>Vivekananda Vidyalaya Matriculation Higher Secondary School Tirupur</li>
+                            <li><span>SSLC 2017 Marks Percentage-90%</span><br>Vivekananda Vidyalaya Matriculation Higher Secondary School Tirupur</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="myw">MY WORKS</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This is a Calculator using JS</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This is a Calculator using JS</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This is a Calculator using JS</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#">See More</a>
+    </div>
+</div>
+
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="abme">CONTACT ME</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vignesh1286246@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-button"></i> 6379069100</p>
+                <div class="socialicons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/VIGNESH Resume.docx" download class=" btn btn2">Download CV</a>
+            </div>
+            <div class="contactright">
+                <form>
+                    <input type="text" name="NAME" placeholder="Name" required>
+                    <input type="email" name="EMAIL" placeholder="Your E-Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class=" btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="thankyou">
+        <p> Thank You for visiting my Portfolio  </p>
+    </div>
+</div>
+
+
+
+<!-- ---------------------------------------------------------------------------------SCRIPT------------------------------------------------------------------------------------------- -->
+    <script>
+        var tablinks=document.getElementsByClassName("links");
+        var tabcontents=document.getElementsByClassName("see-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activate");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active");
+            }
+            event.currentTarget.classList.add("activate");
+            document.getElementById(tabname).classList.add("active")
+        }
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
